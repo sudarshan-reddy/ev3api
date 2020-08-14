@@ -1,4 +1,4 @@
-module github.com/sudarshan-reddy/ev3hand
+module github.com/sudarshan-reddy/ev3api
 
 go 1.14
 
