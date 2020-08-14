@@ -1,6 +1,8 @@
 package main
 
 import (
+	"net/http"
+
 	"github.com/go-chi/chi"
 	"github.com/sudarshan-reddy/ev3api"
 )
@@ -15,4 +17,6 @@ func main() {
 
 	r.Get("/move", armExample.MoveMotor)
 	r.Get("/stop", armExample.StopMotor)
+
+	http.ListenAndServe("0.0.0.0:6000", r)
 }
