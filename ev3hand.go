@@ -8,8 +8,8 @@ import (
 	"github.com/ev3go/ev3dev"
 )
 
-// NewHandler returns a Handler interface to be used.
-func NewHandler() *Handler {
+// New returns a Handler interface to be used.
+func New() *Handler {
 	return &Handler{
 		motorMap: make(map[string]*ev3dev.TachoMotor),
 	}
@@ -63,7 +63,7 @@ func (h *Handler) RegisterLegoMotor(name string, legoMotorName LegoMotorName,
 
 // MoveMotor is a REST API that allows the client to move a registered motor by a
 // name and speed.
-func (h *Handler) MoveMotor(r *http.Request, w http.ResponseWriter) {
+func (h *Handler) MoveMotor(w http.ResponseWriter, r *http.Request) {
 	values, err := url.ParseQuery(r.URL.RawQuery)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)
@@ -112,7 +112,7 @@ func (h *Handler) MoveMotor(r *http.Request, w http.ResponseWriter) {
 }
 
 // StopMotor stops the motor.
-func (h *Handler) StopMotor(r *http.Request, w http.ResponseWriter) {
+func (h *Handler) StopMotor(w http.ResponseWriter, r *http.Request) {
 	values, err := url.ParseQuery(r.URL.RawQuery)
 	if err != nil {
 		w.WriteHeader(http.StatusBadRequest)

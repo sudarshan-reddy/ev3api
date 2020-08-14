@@ -6,6 +6,9 @@ github.com/ev3go/ev3dev v0.0.0-20200524021131-f0272332c5a9 h1:2re9fpHxkWkOeVuy+s
 github.com/ev3go/ev3dev v0.0.0-20200524021131-f0272332c5a9/go.mod h1:otFvu9HmHLZEoSCTHDWT9dsvIODNGaNa1m9TzuzzUXk=
 github.com/ev3go/sisyphus v0.0.0-20200309125033-64cef7b345e9 h1:keuRifqbXDqXfiNaaoJ34sRQ5KaU7tTDPcpLOtE8mBQ=
 github.com/ev3go/sisyphus v0.0.0-20200309125033-64cef7b345e9/go.mod h1:cRbViHgjgpaWqvL3tEt3jSiGg4NggYjCco0lNOBYd3k=
+github.com/go-chi/chi v1.0.0 h1:s/kv1cTXfivYjdKJdyUzNGyAWZ/2t7duW1gKn5ivu+c=
+github.com/go-chi/chi v4.1.2+incompatible h1:fGFk2Gmi/YKXk0OmGfBh0WgmN3XB8lVnEyNz34tQRec=
+github.com/go-chi/chi v4.1.2+incompatible/go.mod h1:eB3wogJHnLi3x/kFX2A+IbTBlXxmMeXJVKy9tTv1XzQ=
 github.com/golang/protobuf v1.2.0/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=
 github.com/mattn/goveralls v0.0.2/go.mod h1:8d1ZMHsd7fW6IRPKQh46F2WRpyib5/X4FOpevwGNQEw=
 github.com/tv42/httpunix v0.0.0-20191220191345-2ba4b9c3382c/go.mod h1:hzIxponao9Kjc7aWznkXaL4U4TWaDSs8zcsY4Ka08nM=
